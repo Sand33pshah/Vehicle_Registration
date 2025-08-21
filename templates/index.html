@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Registration</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="image-section">
+            <img src="static/car.jpg" alt="Vehicle Image" class="vehicle-image">
+        </div>
+        <div class="form-section">
+            <h1>Vehicle Registration Form</h1>
+            <form id="vehicle-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="licence_plate">Licence Plate:</label>
+                        <input type="text" id="licence_plate" name="licence_plate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="owner_name">Owner Name:</label>
+                        <input type="text" id="owner_name" name="owner_name" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="registration_date">Registration Date:</label>
+                        <input type="date" id="registration_date" name="registration_date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="make_model">Make and Model:</label>
+                        <input type="text" id="make_model" name="make_model" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="rto">Registered RTO:</label>
+                        <input type="text" id="rto" name="rto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="state">State:</label>
+                        <input type="text" id="state" name="state" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fuel_type">Fuel Type:</label>
+                        <select id="fuel_type" name="fuel_type" required>
+                            <option value="Petrol">Petrol</option>
+                            <option value="Diesel">Diesel</option>
+                            <option value="EV">EV</option>
+                            <option value="CNG">CNG</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="emission_norm">Emission Norm:</label>
+                        <select id="emission_norm" name="emission_norm" required>
+                            <option value="BS3">BS3</option>
+                            <option value="BS4">BS4</option>
+                            <option value="BS5">BS5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="vehicle_class">Vehicle Class:</label>
+                    <select id="vehicle_class" name="vehicle_class" required>
+                        <option value="LMV">LMV</option>
+                        <option value="HMV">HMV</option>
+                        <option value="Private">Private</option>
+                        <option value="Commercial">Commercial</option>
+                    </select>
+                </div><br>
+                <button type="submit">Register Vehicle</button>
+            </form>
+            <p id="response-message"></p>
+        </div>
+    </div>
+    <script src="static/script.js"></script>
+</body>
+
+</html>
